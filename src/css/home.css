@@ -1,0 +1,230 @@
+
+.home{
+    width: 100%;
+    max-height: 87vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.home .content{
+    margin-top: -30px;
+    width: 49%;
+    text-align: center;
+    color :white;
+   
+}
+.content h1{
+    font-size: 45px;
+    font-weight: 300;
+}
+.content p{
+    font-size: 15px;
+    opacity: .8;
+}
+.content button{
+    width: 150px;
+    height: 40px;
+    padding: 5px 8px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background-color: #009688;
+    transition: all .5s;
+}
+.content button:hover{
+    background-color: rgb(2, 73, 73);
+}
+.content button a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.tournament{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.imgdets{
+    width: 500px;
+    height: 300px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    background-image: url('../pubgimages/img16.jpg');
+    background-position: center;
+    background-size: cover;
+    box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.2);
+    animation: floatimg 2s ease-in-out infinite alternate-reverse both;
+}
+@keyframes floatimg{
+    0%{
+        transform: translateY(15px);
+    }
+    100%{
+        transform: translateY(-15px);
+    }
+}
+.dets{
+    width: 40%;
+    text-align: left;
+    color :white;
+}
+.dets h1{
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+.dets p{
+    font-size: 16px;
+    opacity: .8;
+    font-weight: 500;
+}
+.dets button{
+    width: 100px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: red;
+    transition: all .5s;
+    animation: float 1s ease-in-out  infinite alternate-reverse both;
+}
+@keyframes float{
+    0%{
+        transform: translateY(-2px);
+    }
+    100%{
+        transform: translateY(2px);
+    }
+}
+.dets button:hover{
+    background-color: rgb(2, 73, 73);
+}
+.dets button a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+}
+.org{
+    width: 100%;
+    background-color: Black;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+}
+.org .cardBox{
+    margin-top: 40px;
+    width: 90%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
+}
+.org .cardBox .Card{
+    width: 300px;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+}
+.org .cardBox .Card:nth-child(1){background-image: url('../pubgimages/img13.jpg');}
+.org .cardBox .Card:nth-child(2){background-image: url('../pubgimages/img4.png');}
+.org .cardBox .Card:nth-child(3){background-image: url('../pubgimages/img18.jpg');}
+.org .cardBox .Card:nth-child(4){background-image: url('../pubgimages/img12.jpg');}
+.org .cardBox .Card .stat{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    backdrop-filter: blur(2px);
+    background-color: rgb(0,0,0,0.5);
+}
+.org .cardBox .Card .stat h1{
+    font-size: 80px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-family: playfair display;
+}
+.org .cardBox .Card .stat p{
+    font-size: 18px;
+    opacity: .8;
+    font-weight: 300;
+    width: 50%;
+    text-align: center;
+}
+
+
+@media(max-width:950px){
+    .home .content{
+        width: 80%;
+    }
+    .tournament{
+        flex-wrap: wrap;
+    }
+    .dets{
+        width: 90%;
+    }
+}
+@media(max-width:500px){
+    .home .content{
+        width: 98%;
+    }
+    .content h1{
+        font-size: 35px;
+        
+    }
+    .imgdets{
+        width: 400px;
+        height: 240px;
+        animation: floating 2s ease-in-out infinite alternate-reverse both;
+    }
+    .org{
+        padding: 10px 0px;
+    }
+    .dets h1,.org h1{
+        font-size: 25px;
+    }
+}
+
+@keyframes floating{
+    0%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(-5px);
+    }
+}
+
+@media(max-width:350px){
+    .home{
+        height: 80vh;
+    }
+    .content h1{
+        font-size: 25px; 
+    }
+    .content p{
+        font-size: 12px;
+    }
+    .imgdets{
+        width: 250px;
+        height: 200px;
+    }
+    .dets p{
+        font-size: 12px;
+    }
+   
+}

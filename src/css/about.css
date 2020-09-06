@@ -1,0 +1,365 @@
+#main{
+    padding: 48px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.815);
+}
+
+#section1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0px;
+    width: 80%;
+    height: 100%;
+    color: rgb(255, 53, 35);
+}
+#section1 #left{
+    width: 45%;
+}
+
+
+#section1 #left h1{
+    font-size: 65px;
+    font-weight: 400;
+    margin-bottom:10px;
+    color: #000000;
+}
+
+#section1 #left p{
+    font-size: 15px;
+    color: #3c4858;
+    margin-bottom: 16px;
+}
+
+#section1 #left a{
+    font-size: 16px;
+    font-weight: 600;
+    color:red ;
+    text-decoration: none;
+}
+
+#section1 #right{
+    width: 40%;
+    animation: anima 1s infinite alternate-reverse both ;
+}
+@keyframes anima{
+    0%{
+        transform: scale(.9);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+}
+
+
+#section1 #right img{
+    width: 100%;
+}
+#section2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    padding: 50px 0px;
+    width: 70%;
+    border-bottom: 1px solid #3c485827;
+}
+#section2 h2{
+    font-size: 40px;
+    font-weight: 500;
+    color: #0a0a0a;
+    margin-bottom: 30px;
+    
+}
+#section2 p{
+    font-size: 15px;
+    line-height: 25px;
+    color: #3c4858;
+    margin-bottom: 16px;
+}
+#section2 .link {
+    font-size: 16px;
+    font-weight: 600;
+    color:red ;
+    text-decoration: none;
+}
+
+#section2 .link:hover{
+    color: rgb(12, 75, 117);
+    text-decoration: underline;
+}
+#section3{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-between;
+    padding: 50px 0px;
+    width: 60%;
+    border-bottom: 1px solid #3c485827;
+}
+#section3 h2{
+    font-weight: 500;
+}
+#cardcontainer{
+    width: 100%;
+    margin-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card{
+    width: 30%;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 19px;
+    padding: 5px 0px;
+}
+
+#photo{
+    width: 148px;
+    height: 148px;
+    background-color: saddlebrown;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#photo img{
+   width: 100%;
+}
+
+.card h6{
+    font-size: 12px;
+    color: #3c4858;
+}
+.card p{
+    font-size: 16px;
+}
+
+#section4{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-between;
+    padding: 50px 0px;
+    width: 60%;
+   
+}
+#section4 h2{
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+#section4 p{
+    font-size: 18px;
+    line-height: 25px;
+    color: #3c4858;
+    margin-bottom: 16px;
+}
+#section4 #boxcontainer{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#section4 #boxcontainer.box{
+    width: 33%;
+}
+
+.box h4{
+    font-size: 13px;
+    font-weight: 600;
+    color: #3c4858;
+}
+
+.box p{
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+#section5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px;
+    width: 100%;
+    background-color: #111217;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+#section5 h1{
+    font-weight: 500;
+}
+#section5 #box{
+    margin-top: 60px;
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}
+
+#section5 #box .box{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+}
+#section5 #box .box i{
+    font-size: 26px;
+    margin-bottom: 16px;
+    color: rgb(255, 255, 255);
+   
+}
+
+#section5 #box .box h3{
+    font-size: 18px;
+    margin-bottom: 13px;
+    font-weight: 500;
+}
+
+#section5 #box .box p{
+    font-size: 19px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+@media(max-width:1200px){
+
+    #containernav{
+       width: 80%;
+    }
+    .section{
+        width: 75%;
+    }
+    #topfooter{
+        width: 100%;
+    }
+}
+
+@media(max-width:1000px){
+
+    #togglebar{
+        display: block;
+        font-size: 20px;
+    }
+
+    #rightnav{
+        padding: 20px 40px;
+        position: absolute;
+        z-index: 99;
+        top: 80px;
+        left: -100%;
+        background-color: rgb(255, 255, 255);
+        width: 100%;
+        min-height: 50%;
+        flex-direction: column;
+        text-align: left;
+        align-items: flex-start;
+        justify-content: space-around;
+        font-size: 17px;
+        transition: .5s;
+      }
+      
+      #rightnav.slide{
+        left: 0%;
+       }
+
+      #containernav #rightnav ul{
+          width: 100%;
+          flex-direction: column;
+      }
+
+      #containernav #rightnav ul li {
+          margin-bottom: 16px;
+      }
+
+      #containernav #rightnav ul li a{
+          font-size:17px;
+      }
+
+      .item{
+          position: static;
+      }
+
+      
+     
+      #cardcontainer{
+        flex-wrap: wrap;
+     }
+     #cardcontainer .card{
+         width: 50%;
+     }
+     #section1,#section2,#section3,#section4{
+        
+         width: 95%;
+     }
+     #section1{
+         flex-direction: column;
+     }
+     #section1 #left{
+        width: 95%;
+     }
+     #section1 #right{
+        width: 70%;
+     }
+     #section3 #cardcontainer{
+         align-items: center;
+     }
+     #section5 #box .box{
+        width: 50%;
+        }
+
+      #topfooter .list{
+        width: 20%;
+    }
+}
+@media(max-width:450px){
+
+    #containernav{
+        width: 100%;
+         padding: 0px 20px;
+     }
+
+     #main{
+       margin-top: 0px;
+       padding: 0px 0px;
+     }
+     #cardcontainer .card{
+        width: 100%;
+    }
+     #section5 #box .box{
+        width: 100%;
+        }
+     #topfooter{
+        padding: 40px 10px;
+        position: relative;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #topfooter #logo{
+        position: absolute;
+        top: 5%;
+        left: 5%;
+    }
+
+     #topfooter .list{
+         margin-top: 20px;
+         width: 45%;
+    }
+
+}
